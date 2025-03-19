@@ -2,7 +2,7 @@ import SwiftUI
 import Liquor
 
 struct ContentView: View {
-    @State private var selectedTab: AppTab = .home
+    @State private var selectedTab: AppTab = .heritage
     
     var body: some View {
         VStack {

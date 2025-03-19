@@ -2,15 +2,20 @@ import SwiftUI
 import Liquor
 
 public enum AppTab: String, TabItem {
-    case home = "Stable"
-    case services = "nothing"
-    case partners = "sucks"
+    case explore = "Explore"
+    case heritage = "Heritage"
+    case connect = "Connect"
     
     public var icon: String {
         switch self {
-        case .home: return "face.smiling"
-        case .services: return "questionmark.folder.fill"
-        case .partners: return "exclamationmark.triangle.fill"
+        case .explore: return "figure.walk.motion"
+        case .heritage: return "heart.circle"
+        case .connect: return "figure.stand.line.dotted.figure.stand"
         }
     }
+}
+
+
+#Preview {
+    ContentView()
 }
