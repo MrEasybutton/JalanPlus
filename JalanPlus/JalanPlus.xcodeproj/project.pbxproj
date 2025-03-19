@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		184FBD0C2D8A74E70028E0F7 /* Liquor in Frameworks */ = {isa = PBXBuildFile; productRef = 184FBD0B2D8A74E70028E0F7 /* Liquor */; };
+		841A2DED2D8ABF9E00830879 /* Liquor in Frameworks */ = {isa = PBXBuildFile; productRef = 841A2DEC2D8ABF9E00830879 /* Liquor */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,9 +33,22 @@
 		841A2CAD2D8A6CC500830879 /* JalanPlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JalanPlusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		841A2DFC2D8AC08C00830879 /* Exceptions for "JalanPlus" folder in "JalanPlus" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 841A2C922D8A6CC200830879 /* JalanPlus */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		841A2C952D8A6CC200830879 /* JalanPlus */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				841A2DFC2D8AC08C00830879 /* Exceptions for "JalanPlus" folder in "JalanPlus" target */,
+			);
 			path = JalanPlus;
 			sourceTree = "<group>";
 		};
@@ -56,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				184FBD0C2D8A74E70028E0F7 /* Liquor in Frameworks */,
+				841A2DED2D8ABF9E00830879 /* Liquor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +138,7 @@
 			);
 			name = JalanPlus;
 			packageProductDependencies = (
-				184FBD0B2D8A74E70028E0F7 /* Liquor */,
+				841A2DEC2D8ABF9E00830879 /* Liquor */,
 			);
 			productName = JalanPlus;
 			productReference = 841A2C932D8A6CC200830879 /* JalanPlus.app */;
@@ -210,7 +223,7 @@
 			mainGroup = 841A2C8A2D8A6CC200830879;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				184FBD092D8A74DC0028E0F7 /* XCLocalSwiftPackageReference "../../../../Downloads/Liquor" */,
+				841A2DEB2D8ABF9E00830879 /* XCLocalSwiftPackageReference "../../Liquor" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 841A2C942D8A6CC200830879 /* Products */;
@@ -416,6 +429,7 @@
 				DEVELOPMENT_TEAM = 9P62BDPZ5G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JalanPlus/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -445,6 +459,7 @@
 				DEVELOPMENT_TEAM = 9P62BDPZ5G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JalanPlus/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -577,16 +592,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		184FBD092D8A74DC0028E0F7 /* XCLocalSwiftPackageReference "../../../../Downloads/Liquor" */ = {
+		841A2DEB2D8ABF9E00830879 /* XCLocalSwiftPackageReference "../../Liquor" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../../../Downloads/Liquor;
+			relativePath = ../../Liquor;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		184FBD0B2D8A74E70028E0F7 /* Liquor */ = {
+		841A2DEC2D8ABF9E00830879 /* Liquor */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 184FBD092D8A74DC0028E0F7 /* XCLocalSwiftPackageReference "../../../../Downloads/Liquor" */;
 			productName = Liquor;
 		};
 /* End XCSwiftPackageProductDependency section */

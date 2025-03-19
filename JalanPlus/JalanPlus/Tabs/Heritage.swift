@@ -15,11 +15,23 @@ struct Heritage: View {
             VStack() {
                 ForEach(years) {yearBox in
                     VStack() {
-                        
                         Image(yearBox.imageName)
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width: .infinity, height: 600)
+                            .overlay(
+                                ZStack(alignment: .bottom) {
+                                    Image("ART_02")
+                                        .resizable()
+                                        .scaledToFill()
+                                        .blur(radius: 25)
+                                        .padding(-20)
+                                        .clipped()
+                                        .mask(gradient)
+                                    
+                                    gradient
+                                }.offset(y: 10)
+                            )
                             .scrollTransition() {
                                 effect, phase in effect.scaleEffect(phase.isIdentity ? 1 : 0.5)
                             }
@@ -37,18 +49,7 @@ struct Heritage: View {
                                     
                                 }
                             }
-                            .overlay(
-                                ZStack(alignment: .bottom) {
-                                    Image("")
-                                        .resizable()
-                                        .blur(radius: 25)
-                                        .padding(-20)
-                                        .clipped()
-                                        .mask(gradient)
-                                    
-                                    gradient
-                                }.offset(y: 10)
-                            )
+                            
                             
 
 
@@ -65,7 +66,9 @@ struct Heritage: View {
                     }
                 }
             }
-        }.ignoresSafeArea().background(.black)
+        }
+        .background(.black)
+        .ignoresSafeArea()
     }
 }
 #Preview {
