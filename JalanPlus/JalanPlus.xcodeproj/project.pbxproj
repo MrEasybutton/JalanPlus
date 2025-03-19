@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		841A2CD12D8A6DAF00830879 /* Liquor in Frameworks */ = {isa = PBXBuildFile; productRef = 841A2CD02D8A6DAF00830879 /* Liquor */; };
+		184FBD0C2D8A74E70028E0F7 /* Liquor in Frameworks */ = {isa = PBXBuildFile; productRef = 184FBD0B2D8A74E70028E0F7 /* Liquor */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				841A2CD12D8A6DAF00830879 /* Liquor in Frameworks */,
+				184FBD0C2D8A74E70028E0F7 /* Liquor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,12 +77,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		184FBD0A2D8A74E70028E0F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		841A2C8A2D8A6CC200830879 = {
 			isa = PBXGroup;
 			children = (
 				841A2C952D8A6CC200830879 /* JalanPlus */,
 				841A2CA62D8A6CC500830879 /* JalanPlusTests */,
 				841A2CB02D8A6CC500830879 /* JalanPlusUITests */,
+				184FBD0A2D8A74E70028E0F7 /* Frameworks */,
 				841A2C942D8A6CC200830879 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -117,7 +125,7 @@
 			);
 			name = JalanPlus;
 			packageProductDependencies = (
-				841A2CD02D8A6DAF00830879 /* Liquor */,
+				184FBD0B2D8A74E70028E0F7 /* Liquor */,
 			);
 			productName = JalanPlus;
 			productReference = 841A2C932D8A6CC200830879 /* JalanPlus.app */;
@@ -202,7 +210,7 @@
 			mainGroup = 841A2C8A2D8A6CC200830879;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				841A2CCF2D8A6DAF00830879 /* XCLocalSwiftPackageReference "../../Liquor" */,
+				184FBD092D8A74DC0028E0F7 /* XCLocalSwiftPackageReference "../../../../Downloads/Liquor" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 841A2C942D8A6CC200830879 /* Products */;
@@ -569,15 +577,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		841A2CCF2D8A6DAF00830879 /* XCLocalSwiftPackageReference "../../Liquor" */ = {
+		184FBD092D8A74DC0028E0F7 /* XCLocalSwiftPackageReference "../../../../Downloads/Liquor" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../Liquor;
+			relativePath = ../../../../Downloads/Liquor;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		841A2CD02D8A6DAF00830879 /* Liquor */ = {
+		184FBD0B2D8A74E70028E0F7 /* Liquor */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 184FBD092D8A74DC0028E0F7 /* XCLocalSwiftPackageReference "../../../../Downloads/Liquor" */;
 			productName = Liquor;
 		};
 /* End XCSwiftPackageProductDependency section */
