@@ -55,10 +55,11 @@ struct Heritage: View {
 
             HStack {
                 HStack(spacing: 4) {
-                    ForEach(0..<5) { _ in
+                    ForEach(1..<4) { i in
                         Image(systemName: "star.fill")
-                            .font(.system(size: 12))
+                            .font(.system(size: 14))
                             .foregroundColor(.white)
+                            .offset(x:CGFloat(-i), y:CGFloat((8-i*2)*(8-i*2)))
                     }
                 }
                 
@@ -69,10 +70,11 @@ struct Heritage: View {
                     .shadow(radius: 16)
                 
                 HStack(spacing: 4) {
-                    ForEach(0..<5) { _ in
+                    ForEach(1..<4) { j in
                         Image(systemName: "star.fill")
-                            .font(.system(size: 12))
+                            .font(.system(size: 14))
                             .foregroundColor(.white)
+                            .offset(x:CGFloat(j), y:CGFloat((j*2)*(j*2)))
                     }
                 }
             }
@@ -149,14 +151,45 @@ struct DecadeCard: View {
 
                 if isSelected {
                     VStack(alignment: .leading, spacing: 12) {
-                        Text(decade.subtitle)
-                            .font(.system(size: 18, weight: .semibold))
-                            .foregroundColor(redColor)
-                        
-                        Text(decade.description)
-                            .font(.system(size: 16))
-                            .foregroundColor(textColor)
-                            .lineSpacing(4)
+                        ScrollView(.horizontal) {
+                            HStack {
+                                ForEach(0..<decade.imageNames.count) {j in
+                                    Image(decade.imageNames[j]).resizable().scaledToFill()
+                                        .frame(width: 320)
+                                        .cornerRadius(10)
+                                        .clipped()
+                                        .overlay() {
+                                            VStack {
+                                                Spacer()
+                                                RoundedRectangle(cornerRadius: 10)
+                                                    .fill(.black.opacity(0.5))
+                                                    .frame(width: 320, height: 130, alignment: .bottom).overlay() {
+                                                        VStack {
+                                                            HStack{
+                                                                Text(decade.subtitles[j])
+                                                                    .font(.system(size:24))
+                                                                    .foregroundStyle(.white)
+                                                                    .bold()
+                                                                    
+                                                                Spacer()
+                                                            }.padding([.leading], 20).padding([.top], 8)
+                                                            Text(decade.descriptions[j])
+                                                                .font(.system(size:14))
+                                                                .foregroundStyle(.white)
+                                                                .padding([.leading], 16)
+                                                                .frame(width: 300)
+                                                            
+                                                            Spacer()
+                                                                
+                                                        }
+                                                    }
+                                                    
+                                            
+                                            }
+                                        }
+                                }
+                            }
+                        }
 
                         HStack {
                             Spacer()
