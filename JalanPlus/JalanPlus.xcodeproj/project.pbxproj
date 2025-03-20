@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1882396A2D8BE796005F410D /* Liquor in Frameworks */ = {isa = PBXBuildFile; productRef = 188239692D8BE796005F410D /* Liquor */; };
+		84E1FEF02D8BF0520072581A /* Liquor in Frameworks */ = {isa = PBXBuildFile; productRef = 84E1FEEF2D8BF0520072581A /* Liquor */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1882396A2D8BE796005F410D /* Liquor in Frameworks */,
+				84E1FEF02D8BF0520072581A /* Liquor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +138,7 @@
 			);
 			name = JalanPlus;
 			packageProductDependencies = (
-				188239692D8BE796005F410D /* Liquor */,
+				84E1FEEF2D8BF0520072581A /* Liquor */,
 			);
 			productName = JalanPlus;
 			productReference = 841A2C932D8A6CC200830879 /* JalanPlus.app */;
@@ -223,7 +223,7 @@
 			mainGroup = 841A2C8A2D8A6CC200830879;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				188239682D8BE790005F410D /* XCLocalSwiftPackageReference "../../../../Downloads/Liquor" */,
+				84E1FEEE2D8BF0440072581A /* XCLocalSwiftPackageReference "../../Liquor" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 841A2C942D8A6CC200830879 /* Products */;
@@ -592,16 +592,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		188239682D8BE790005F410D /* XCLocalSwiftPackageReference "../../../../Downloads/Liquor" */ = {
+		84E1FEEE2D8BF0440072581A /* XCLocalSwiftPackageReference "../../Liquor" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../../../Downloads/Liquor;
+			relativePath = ../../Liquor;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		188239692D8BE796005F410D /* Liquor */ = {
+		84E1FEEF2D8BF0520072581A /* Liquor */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 188239682D8BE790005F410D /* XCLocalSwiftPackageReference "../../../../Downloads/Liquor" */;
+			package = 84E1FEEE2D8BF0440072581A /* XCLocalSwiftPackageReference "../../Liquor" */;
 			productName = Liquor;
 		};
 /* End XCSwiftPackageProductDependency section */
