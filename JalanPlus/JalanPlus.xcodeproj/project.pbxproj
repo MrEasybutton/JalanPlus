@@ -242,7 +242,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				840F1DD02D8BB44500AB08E9 /* XCRemoteSwiftPackageReference "supabase-swift" */,
-				84939A9A2D8BF288009BC047 /* XCLocalSwiftPackageReference "../../GitHub/Liquor" */,
+				844B9D342D8C033F00888B34 /* XCLocalSwiftPackageReference "../../Liquor" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 841A2C942D8A6CC200830879 /* Products */;
@@ -613,9 +613,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		84939A9A2D8BF288009BC047 /* XCLocalSwiftPackageReference "../../GitHub/Liquor" */ = {
+		844B9D342D8C033F00888B34 /* XCLocalSwiftPackageReference "../../Liquor" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../GitHub/Liquor;
+			relativePath = ../../Liquor;
 		};
 /* End XCLocalSwiftPackageReference section */
 

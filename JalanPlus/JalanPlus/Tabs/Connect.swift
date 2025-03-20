@@ -239,12 +239,23 @@ struct Connect: View {
                                         .overlay {
                                             HStack {
                                                 Spacer()
+                                                Button {
+                                                    points += 10
+                                                    storedPoints = points
+                                                } label: {
+                                                    Label("Medal", systemImage: "medal")
+                                                        .font(.title)
+                                                        .labelStyle(.iconOnly)
+                                                }
                                                 RoundedRectangle(cornerRadius: 12)
                                                     .fill(Color.red)
                                                     .overlay {
-                                                        Text("XP: \(points)")
-                                                            .font(.custom("Outfit", size: 32))
-                                                            .foregroundStyle(.white)
+                                                        HStack {
+                                                            
+                                                            Text("XP: \(points)")
+                                                                .font(.custom("Outfit", size: 32))
+                                                                .foregroundStyle(.white)
+                                                        }
                                                     }
                                                     .frame(width: 280, height: 40)
                                                 Spacer()
@@ -254,6 +265,7 @@ struct Connect: View {
                                         .shadow(radius: 10)
                                 }
                             }
+                            .offset(y: 20)
                         }
                         Spacer()
                     }
