@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		840F1DD22D8BB44600AB08E9 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 840F1DD12D8BB44600AB08E9 /* Auth */; };
+		840F1DD42D8BB44600AB08E9 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 840F1DD32D8BB44600AB08E9 /* Functions */; };
+		840F1DD62D8BB44600AB08E9 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 840F1DD52D8BB44600AB08E9 /* PostgREST */; };
+		840F1DD82D8BB44600AB08E9 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 840F1DD72D8BB44600AB08E9 /* Realtime */; };
+		840F1DDA2D8BB44600AB08E9 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 840F1DD92D8BB44600AB08E9 /* Storage */; };
+		840F1DDC2D8BB44600AB08E9 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 840F1DDB2D8BB44600AB08E9 /* Supabase */; };
+		841A2DED2D8ABF9E00830879 /* Liquor in Frameworks */ = {isa = PBXBuildFile; productRef = 841A2DEC2D8ABF9E00830879 /* Liquor */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		841A2CA42D8A6CC500830879 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 841A2C8B2D8A6CC200830879 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 841A2C922D8A6CC200830879;
+			remoteInfo = JalanPlus;
+		};
+		841A2CAE2D8A6CC500830879 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 841A2C8B2D8A6CC200830879 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 841A2C922D8A6CC200830879;
+			remoteInfo = JalanPlus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		841A2C932D8A6CC200830879 /* JalanPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JalanPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		841A2CA32D8A6CC500830879 /* JalanPlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JalanPlusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		841A2CAD2D8A6CC500830879 /* JalanPlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JalanPlusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		841A2DFC2D8AC08C00830879 /* Exceptions for "JalanPlus" folder in "JalanPlus" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 841A2C922D8A6CC200830879 /* JalanPlus */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		841A2C952D8A6CC200830879 /* JalanPlus */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				841A2DFC2D8AC08C00830879 /* Exceptions for "JalanPlus" folder in "JalanPlus" target */,
+			);
+			path = JalanPlus;
+			sourceTree = "<group>";
+		};
+		841A2CA62D8A6CC500830879 /* JalanPlusTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = JalanPlusTests;
+			sourceTree = "<group>";
+		};
+		841A2CB02D8A6CC500830879 /* JalanPlusUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = JalanPlusUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		841A2C902D8A6CC200830879 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840F1DDC2D8BB44600AB08E9 /* Supabase in Frameworks */,
+				840F1DDA2D8BB44600AB08E9 /* Storage in Frameworks */,
+				840F1DD62D8BB44600AB08E9 /* PostgREST in Frameworks */,
+				840F1DD42D8BB44600AB08E9 /* Functions in Frameworks */,
+				840F1DD22D8BB44600AB08E9 /* Auth in Frameworks */,
+				840F1DD82D8BB44600AB08E9 /* Realtime in Frameworks */,
+				841A2DED2D8ABF9E00830879 /* Liquor in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841A2CA02D8A6CC500830879 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841A2CAA2D8A6CC500830879 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		184FBD0A2D8A74E70028E0F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		841A2C8A2D8A6CC200830879 = {
+			isa = PBXGroup;
+			children = (
+				841A2C952D8A6CC200830879 /* JalanPlus */,
+				841A2CA62D8A6CC500830879 /* JalanPlusTests */,
+				841A2CB02D8A6CC500830879 /* JalanPlusUITests */,
+				184FBD0A2D8A74E70028E0F7 /* Frameworks */,
+				841A2C942D8A6CC200830879 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		841A2C942D8A6CC200830879 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				841A2C932D8A6CC200830879 /* JalanPlus.app */,
+				841A2CA32D8A6CC500830879 /* JalanPlusTests.xctest */,
+				841A2CAD2D8A6CC500830879 /* JalanPlusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		841A2C922D8A6CC200830879 /* JalanPlus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 841A2CB72D8A6CC500830879 /* Build configuration list for PBXNativeTarget "JalanPlus" */;
+			buildPhases = (
+				841A2C8F2D8A6CC200830879 /* Sources */,
+				841A2C902D8A6CC200830879 /* Frameworks */,
+				841A2C912D8A6CC200830879 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				841A2C952D8A6CC200830879 /* JalanPlus */,
+			);
+			name = JalanPlus;
+			packageProductDependencies = (
+				841A2DEC2D8ABF9E00830879 /* Liquor */,
+				840F1DD12D8BB44600AB08E9 /* Auth */,
+				840F1DD32D8BB44600AB08E9 /* Functions */,
+				840F1DD52D8BB44600AB08E9 /* PostgREST */,
+				840F1DD72D8BB44600AB08E9 /* Realtime */,
+				840F1DD92D8BB44600AB08E9 /* Storage */,
+				840F1DDB2D8BB44600AB08E9 /* Supabase */,
+			);
+			productName = JalanPlus;
+			productReference = 841A2C932D8A6CC200830879 /* JalanPlus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		841A2CA22D8A6CC500830879 /* JalanPlusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 841A2CBA2D8A6CC500830879 /* Build configuration list for PBXNativeTarget "JalanPlusTests" */;
+			buildPhases = (
+				841A2C9F2D8A6CC500830879 /* Sources */,
+				841A2CA02D8A6CC500830879 /* Frameworks */,
+				841A2CA12D8A6CC500830879 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				841A2CA52D8A6CC500830879 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				841A2CA62D8A6CC500830879 /* JalanPlusTests */,
+			);
+			name = JalanPlusTests;
+			packageProductDependencies = (
+			);
+			productName = JalanPlusTests;
+			productReference = 841A2CA32D8A6CC500830879 /* JalanPlusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		841A2CAC2D8A6CC500830879 /* JalanPlusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 841A2CBD2D8A6CC500830879 /* Build configuration list for PBXNativeTarget "JalanPlusUITests" */;
+			buildPhases = (
+				841A2CA92D8A6CC500830879 /* Sources */,
+				841A2CAA2D8A6CC500830879 /* Frameworks */,
+				841A2CAB2D8A6CC500830879 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				841A2CAF2D8A6CC500830879 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				841A2CB02D8A6CC500830879 /* JalanPlusUITests */,
+			);
+			name = JalanPlusUITests;
+			packageProductDependencies = (
+			);
+			productName = JalanPlusUITests;
+			productReference = 841A2CAD2D8A6CC500830879 /* JalanPlusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		841A2C8B2D8A6CC200830879 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					841A2C922D8A6CC200830879 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					841A2CA22D8A6CC500830879 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 841A2C922D8A6CC200830879;
+					};
+					841A2CAC2D8A6CC500830879 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 841A2C922D8A6CC200830879;
+					};
+				};
+			};
+			buildConfigurationList = 841A2C8E2D8A6CC200830879 /* Build configuration list for PBXProject "JalanPlus" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 841A2C8A2D8A6CC200830879;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				840F1DD02D8BB44500AB08E9 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+				84939A9A2D8BF288009BC047 /* XCLocalSwiftPackageReference "../../GitHub/Liquor" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 841A2C942D8A6CC200830879 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				841A2C922D8A6CC200830879 /* JalanPlus */,
+				841A2CA22D8A6CC500830879 /* JalanPlusTests */,
+				841A2CAC2D8A6CC500830879 /* JalanPlusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		841A2C912D8A6CC200830879 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841A2CA12D8A6CC500830879 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841A2CAB2D8A6CC500830879 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		841A2C8F2D8A6CC200830879 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841A2C9F2D8A6CC500830879 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841A2CA92D8A6CC500830879 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		841A2CA52D8A6CC500830879 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 841A2C922D8A6CC200830879 /* JalanPlus */;
+			targetProxy = 841A2CA42D8A6CC500830879 /* PBXContainerItemProxy */;
+		};
+		841A2CAF2D8A6CC500830879 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 841A2C922D8A6CC200830879 /* JalanPlus */;
+			targetProxy = 841A2CAE2D8A6CC500830879 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		841A2CB52D8A6CC500830879 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		841A2CB62D8A6CC500830879 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		841A2CB82D8A6CC500830879 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JalanPlus/Preview Content\"";
+				DEVELOPMENT_TEAM = 9P62BDPZ5G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JalanPlus/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "JalanPlus requires your permissions for location tracking in SGConnect.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = TyK.JalanPlus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		841A2CB92D8A6CC500830879 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JalanPlus/Preview Content\"";
+				DEVELOPMENT_TEAM = 9P62BDPZ5G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JalanPlus/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "JalanPlus requires your permissions for location tracking in SGConnect.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = TyK.JalanPlus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		841A2CBB2D8A6CC500830879 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9P62BDPZ5G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = TyK.JalanPlusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JalanPlus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JalanPlus";
+			};
+			name = Debug;
+		};
+		841A2CBC2D8A6CC500830879 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9P62BDPZ5G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = TyK.JalanPlusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JalanPlus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JalanPlus";
+			};
+			name = Release;
+		};
+		841A2CBE2D8A6CC500830879 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9P62BDPZ5G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = TyK.JalanPlusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JalanPlus;
+			};
+			name = Debug;
+		};
+		841A2CBF2D8A6CC500830879 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9P62BDPZ5G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = TyK.JalanPlusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JalanPlus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		841A2C8E2D8A6CC200830879 /* Build configuration list for PBXProject "JalanPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841A2CB52D8A6CC500830879 /* Debug */,
+				841A2CB62D8A6CC500830879 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		841A2CB72D8A6CC500830879 /* Build configuration list for PBXNativeTarget "JalanPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841A2CB82D8A6CC500830879 /* Debug */,
+				841A2CB92D8A6CC500830879 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		841A2CBA2D8A6CC500830879 /* Build configuration list for PBXNativeTarget "JalanPlusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841A2CBB2D8A6CC500830879 /* Debug */,
+				841A2CBC2D8A6CC500830879 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		841A2CBD2D8A6CC500830879 /* Build configuration list for PBXNativeTarget "JalanPlusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841A2CBE2D8A6CC500830879 /* Debug */,
+				841A2CBF2D8A6CC500830879 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		84939A9A2D8BF288009BC047 /* XCLocalSwiftPackageReference "../../GitHub/Liquor" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../GitHub/Liquor;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		840F1DD02D8BB44500AB08E9 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		840F1DD12D8BB44600AB08E9 /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 840F1DD02D8BB44500AB08E9 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		840F1DD32D8BB44600AB08E9 /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 840F1DD02D8BB44500AB08E9 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		840F1DD52D8BB44600AB08E9 /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 840F1DD02D8BB44500AB08E9 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		840F1DD72D8BB44600AB08E9 /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 840F1DD02D8BB44500AB08E9 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		840F1DD92D8BB44600AB08E9 /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 840F1DD02D8BB44500AB08E9 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		840F1DDB2D8BB44600AB08E9 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 840F1DD02D8BB44500AB08E9 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+		841A2DEC2D8ABF9E00830879 /* Liquor */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Liquor;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 841A2C8B2D8A6CC200830879 /* Project object */;
+}
