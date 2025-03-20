@@ -1,76 +1,197 @@
 import SwiftUI
 
 struct Heritage: View {
-    let gradient = LinearGradient(
-        gradient: Gradient(stops: [
-            .init(color: .black, location: 0),
-            .init(color: .clear, location: 0.4)
-        ]),
-        startPoint: .bottom,
-        endPoint: .top
-    )
+    @State private var selectedDecade: String?
+    @Environment(\.colorScheme) var colorScheme
+
+    let redColor = Color(red: 0.92, green: 0.12, blue: 0.16)
+    let whiteColor = Color.white
     
     var body: some View {
-        ScrollView(showsIndicators: true) {
-            VStack() {
-                ForEach(years) {yearBox in
-                    VStack() {
-                        Image(yearBox.imageName)
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: .infinity, height: 600)
-                            .overlay(
-                                ZStack(alignment: .bottom) {
-                                    Image("ART_02")
-                                        .resizable()
-                                        .scaledToFill()
-                                        .blur(radius: 25)
-                                        .padding(-20)
-                                        .clipped()
-                                        .mask(gradient)
-                                    
-                                    gradient
-                                }.offset(y: 10)
-                            )
-                            .scrollTransition() {
-                                effect, phase in effect.scaleEffect(phase.isIdentity ? 1 : 0.5)
-                            }
-                            .overlay() {
-                                ZStack() {
-                                    Rectangle()
-                                        .frame(width: 250,height: 100)
-                                        .opacity(0.3)
-                                        .blur(radius: 20)
-                                    
-                                    
-                                    Text(yearBox.title).foregroundStyle(.white)
-                                        .bold(true)
-                                        .font(.system(size: 120))
-                                    
+        ZStack {
+            backgroundLayer
+            
+            VStack(spacing: 0) {
+                headerView
+                ScrollView {
+                    VStack(spacing: -20) {
+                        ForEach(decades) { decade in
+                            DecadeCard(
+                                decade: decade,
+                                isSelected: selectedDecade == decade.id,
+                                redColor: redColor,
+                                colorScheme: colorScheme,
+                                onTap: {
+                                    withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
+                                        selectedDecade = selectedDecade == decade.id ? nil : decade.id
+                                    }
                                 }
-                            }
-                            
-                            
-
-
-                            
-                    
-                    Text("\(yearBox.subtext)").font(.system(size: 24))
-                        .foregroundStyle(.white)
-                        .padding()
-                        .background(.black)
-                        .multilineTextAlignment(.center)
-                        .frame(width: 420, height: .infinity, alignment: .top)
-                        
-                    
+                            )
+                        }
                     }
+                    .padding(.bottom, 20)
                 }
             }
         }
-        .background(.black)
-        .ignoresSafeArea()
+        .edgesIgnoringSafeArea(.all)
+    }
+    
+    var backgroundLayer: some View {
+        LinearGradient(
+            gradient: Gradient(colors: [
+                colorScheme == .dark ? Color.black : Color(white: 0.95),
+                colorScheme == .dark ? Color(red: 0.1, green: 0.0, blue: 0.0) : Color(red: 0.95, green: 0.95, blue: 0.95)
+            ]),
+            startPoint: .top,
+            endPoint: .bottom
+        )
+    }
+
+    var headerView: some View {
+        ZStack {
+            Rectangle()
+                .fill(redColor)
+                .frame(height: 140)
+
+            HStack {
+                HStack(spacing: 4) {
+                    ForEach(0..<5) { _ in
+                        Image(systemName: "star.fill")
+                            .font(.system(size: 12))
+                            .foregroundColor(.white)
+                    }
+                }
+                
+                Image("sg60")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 80, height: 80)
+                    .shadow(radius: 16)
+                
+                HStack(spacing: 4) {
+                    ForEach(0..<5) { _ in
+                        Image(systemName: "star.fill")
+                            .font(.system(size: 12))
+                            .foregroundColor(.white)
+                    }
+                }
+            }
+            .offset(y: 20)
+        }
     }
 }
-#Preview {
-    Heritage()
+
+struct DecadeCard: View {
+    let decade: Decade
+    let isSelected: Bool
+    let redColor: Color
+    let colorScheme: ColorScheme
+    let onTap: () -> Void
+    
+    var cardBackground: Color {
+        colorScheme == .dark ? Color.black.opacity(0.6) : Color.white
+    }
+    
+    var textColor: Color {
+        colorScheme == .dark ? Color.white : Color.black
+    }
+    
+    var body: some View {
+        VStack(spacing: 0) {
+            Rectangle()
+                .fill(redColor.opacity(0.7))
+                .frame(width: 4, height: 20)
+
+            VStack(spacing: 0) {
+                ZStack(alignment: .bottomLeading) {
+                    Image(decade.id)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(height: isSelected ? 200 : 120)
+                        .clipped()
+                        .overlay(
+                            LinearGradient(
+                                colors: [.clear, redColor.opacity(0.7)],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
+
+                    HStack(alignment: .bottom) {
+                        Circle()
+                            .fill(redColor)
+                            .frame(width: 24, height: 24)
+                            .overlay(
+                                Circle()
+                                    .stroke(Color.white, lineWidth: 2)
+                            )
+                            .background(
+                                Circle()
+                                    .fill(colorScheme == .dark ? Color.black : Color.white)
+                                    .frame(width: 36, height: 36)
+                            )
+                            .offset(x: -20)
+
+                        Text(decade.id)
+                            .font(.system(size: 28, weight: .bold, design: .rounded))
+                            .foregroundColor(.white)
+                        
+                        Spacer()
+
+                        Text(decade.title)
+                            .font(.system(size: 22, weight: .semibold, design: .rounded))
+                            .foregroundColor(.white)
+                            .padding(.trailing, 20)
+                    }
+                    .padding(.bottom, 15)
+                    .padding(.leading, 30)
+                }
+
+                if isSelected {
+                    VStack(alignment: .leading, spacing: 12) {
+                        Text(decade.subtitle)
+                            .font(.system(size: 18, weight: .semibold))
+                            .foregroundColor(redColor)
+                        
+                        Text(decade.description)
+                            .font(.system(size: 16))
+                            .foregroundColor(textColor)
+                            .lineSpacing(4)
+
+                        HStack {
+                            Spacer()
+                            Image(systemName: "chevron.up")
+                                .foregroundColor(redColor)
+                            Spacer()
+                        }
+                        .padding(.top, 10)
+                    }
+                    .padding(.all, 20)
+                    .background(cardBackground)
+                }
+            }
+            .cornerRadius(15)
+            .shadow(color: Color.black.opacity(0.15), radius: 8, x: 0, y: 4)
+            .padding(.horizontal, 20)
+            .onTapGesture(perform: onTap)
+
+            Rectangle()
+                .fill(redColor.opacity(0.7))
+                .frame(width: 4, height: 20)
+        }
+    }
+}
+
+struct HeritageTimeline_Previews: PreviewProvider {
+    static var previews: some View {
+        Group {
+            Heritage()
+                .preferredColorScheme(.light)
+                .previewDisplayName("Light Mode")
+            
+            Heritage()
+                .preferredColorScheme(.dark)
+                .previewDisplayName("Dark Mode")
+        }
+    }
 }

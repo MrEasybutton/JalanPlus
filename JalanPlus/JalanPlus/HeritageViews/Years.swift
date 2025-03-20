@@ -1,9 +1,3 @@
-//
-//  Years.swift
-//  JalanPlus
-//
-//  Created by Apple on 19/3/25.
-//
 import Foundation
 import SwiftUI
 

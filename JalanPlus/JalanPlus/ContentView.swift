@@ -3,6 +3,7 @@ import Liquor
 
 struct ContentView: View {
     @State private var selectedTab: AppTab = .heritage
+    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         VStack {
@@ -19,11 +20,27 @@ struct ContentView: View {
             }
         }
         .offset(y: 10)
-        .ignoresSafeArea(.keyboard)
+        .ignoresSafeArea()
         
         Spacer()
-        Aquaporin(activeTab: $selectedTab, configuration: AquaporinConfiguration(inactiveTint: .black.opacity(0.4), backgroundGradient: LinearGradient(colors: [.white], startPoint: .topLeading, endPoint: .bottomTrailing), shadowColor: .red.opacity(0.8), shadowRadius: 0.2))
-            .ignoresSafeArea(.keyboard)
+        Aquaporin(
+            activeTab: $selectedTab,
+            configuration: AquaporinConfiguration(
+                inactiveTint: colorScheme == .dark ? .white.opacity(0.4) : .black.opacity(0.4),
+                backgroundGradient: LinearGradient(
+                    colors: [
+                        colorScheme == .dark ? Color.black : Color.white
+                    ],
+                    startPoint: .topLeading,
+                    endPoint: .bottomTrailing
+                ),
+                shadowColor: colorScheme == .dark ? Color.red.opacity(0.6) : Color.red.opacity(0.8),
+                shadowRadius: 0.2,
+                animationResponse: 0.45,
+                animationBlendDuration: 0.2
+            )
+        )
+        .ignoresSafeArea(.keyboard)
     }
 }
 
