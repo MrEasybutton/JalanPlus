@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84E1FEF02D8BF0520072581A /* Liquor in Frameworks */ = {isa = PBXBuildFile; productRef = 84E1FEEF2D8BF0520072581A /* Liquor */; };
+		840F1DD22D8BB44600AB08E9 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 840F1DD12D8BB44600AB08E9 /* Auth */; };
+		840F1DD42D8BB44600AB08E9 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 840F1DD32D8BB44600AB08E9 /* Functions */; };
+		840F1DD62D8BB44600AB08E9 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 840F1DD52D8BB44600AB08E9 /* PostgREST */; };
+		840F1DD82D8BB44600AB08E9 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 840F1DD72D8BB44600AB08E9 /* Realtime */; };
+		840F1DDA2D8BB44600AB08E9 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 840F1DD92D8BB44600AB08E9 /* Storage */; };
+		840F1DDC2D8BB44600AB08E9 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 840F1DDB2D8BB44600AB08E9 /* Supabase */; };
+		841A2DED2D8ABF9E00830879 /* Liquor in Frameworks */ = {isa = PBXBuildFile; productRef = 841A2DEC2D8ABF9E00830879 /* Liquor */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +75,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84E1FEF02D8BF0520072581A /* Liquor in Frameworks */,
+				840F1DDC2D8BB44600AB08E9 /* Supabase in Frameworks */,
+				840F1DDA2D8BB44600AB08E9 /* Storage in Frameworks */,
+				840F1DD62D8BB44600AB08E9 /* PostgREST in Frameworks */,
+				840F1DD42D8BB44600AB08E9 /* Functions in Frameworks */,
+				840F1DD22D8BB44600AB08E9 /* Auth in Frameworks */,
+				840F1DD82D8BB44600AB08E9 /* Realtime in Frameworks */,
+				841A2DED2D8ABF9E00830879 /* Liquor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +150,13 @@
 			);
 			name = JalanPlus;
 			packageProductDependencies = (
-				84E1FEEF2D8BF0520072581A /* Liquor */,
+				841A2DEC2D8ABF9E00830879 /* Liquor */,
+				840F1DD12D8BB44600AB08E9 /* Auth */,
+				840F1DD32D8BB44600AB08E9 /* Functions */,
+				840F1DD52D8BB44600AB08E9 /* PostgREST */,
+				840F1DD72D8BB44600AB08E9 /* Realtime */,
+				840F1DD92D8BB44600AB08E9 /* Storage */,
+				840F1DDB2D8BB44600AB08E9 /* Supabase */,
 			);
 			productName = JalanPlus;
 			productReference = 841A2C932D8A6CC200830879 /* JalanPlus.app */;
@@ -223,7 +241,8 @@
 			mainGroup = 841A2C8A2D8A6CC200830879;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				84E1FEEE2D8BF0440072581A /* XCLocalSwiftPackageReference "../../Liquor" */,
+				841A2DEB2D8ABF9E00830879 /* XCLocalSwiftPackageReference "../../Liquor" */,
+				840F1DD02D8BB44500AB08E9 /* XCRemoteSwiftPackageReference "supabase-swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 841A2C942D8A6CC200830879 /* Products */;
@@ -430,6 +449,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = JalanPlus/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "JalanPlus requires your permissions for location tracking in SGConnect.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -460,6 +480,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = JalanPlus/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "JalanPlus requires your permissions for location tracking in SGConnect.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -592,16 +613,56 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		84E1FEEE2D8BF0440072581A /* XCLocalSwiftPackageReference "../../Liquor" */ = {
+		841A2DEB2D8ABF9E00830879 /* XCLocalSwiftPackageReference "../../Liquor" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../../Liquor;
 		};
 /* End XCLocalSwiftPackageReference section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		840F1DD02D8BB44500AB08E9 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		84E1FEEF2D8BF0520072581A /* Liquor */ = {
+		840F1DD12D8BB44600AB08E9 /* Auth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 84E1FEEE2D8BF0440072581A /* XCLocalSwiftPackageReference "../../Liquor" */;
+			package = 840F1DD02D8BB44500AB08E9 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		840F1DD32D8BB44600AB08E9 /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 840F1DD02D8BB44500AB08E9 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		840F1DD52D8BB44600AB08E9 /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 840F1DD02D8BB44500AB08E9 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		840F1DD72D8BB44600AB08E9 /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 840F1DD02D8BB44500AB08E9 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		840F1DD92D8BB44600AB08E9 /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 840F1DD02D8BB44500AB08E9 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		840F1DDB2D8BB44600AB08E9 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 840F1DD02D8BB44500AB08E9 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+		841A2DEC2D8ABF9E00830879 /* Liquor */ = {
+			isa = XCSwiftPackageProductDependency;
 			productName = Liquor;
 		};
 /* End XCSwiftPackageProductDependency section */
